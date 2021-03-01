@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../img/bg_001.jpg);
+}
+ul li {
+  display: inline-block;
+  margin-right: 1vw;
+}
+li {
+  color: white;
+  font-weight: bold;
+}
+ul {
+  text-align: right;
+  position: relative;
+  margin-top: 10vh;
+  margin-right: 10vw;
+}
+#logo {
+  width: 200px;
+  height: 75px;
+  position: absolute;
+  margin-left: 20vw;
+}
+a {
+  color: white;
+}
+h1 {
+  display: inline-block;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 20vw;
+  margin-top: 10vh;
+}
+p {
+  display: inline-block;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 20vw;
+  margin-top: 3vh;
+}
+#phone1 {
+  display: inline;
+  width: 300px;
+  height: 600px;
+}
