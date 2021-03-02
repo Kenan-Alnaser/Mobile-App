@@ -18,7 +18,7 @@ ul {
   text-align: right;
   position: relative;
   margin-top: 10vh;
-  margin-right: 35vw;
+  margin-right: 30vw;
 }
 #logo {
   position: absolute;
@@ -34,15 +34,16 @@ h1 {
   color: white;
   text-align: left;
   font-weight: bold;
-  margin-left: 20vw;
-  margin-top: 10vh;
+  margin-left: 35vw;
+  margin-top: 15vh;
+  transform: scale(1.5);
 }
 p {
   color: white;
   text-align: left;
   font-weight: bold;
   margin-left: 20vw;
-  margin-top: 3vh;
+  margin-top: 7vh;
 }
 .phones {
   position: relative;
@@ -51,16 +52,16 @@ p {
   width: 17vw;
   height: 60vh;
   position: absolute;
-  right: 40vw;
-  top: -20vh;
+  right: 33vw;
+  top: -30vh;
   z-index: 2;
 }
 #phone2 {
-  right: 30vw;
   width: 17vw;
   height: 60vh;
   position: absolute;
-  top: -20vh;
+  right: 27vw;
+  top: -33vh;
   z-index: 1;
 }
 .buttons {
@@ -68,7 +69,7 @@ p {
 }
 #b1 {
   position: absolute;
-  left: 20vw;
+  left: 23vw;
   margin-top: 10vh;
   transform: scale(2.5);
   background-color: green;
@@ -80,7 +81,7 @@ p {
 }
 #b2 {
   position: absolute;
-  left: 33vw;
+  left: 35vw;
   margin-top: 10vh;
   transform: scale(2.5);
   background-color: blue;
