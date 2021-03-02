@@ -22,10 +22,10 @@ ul {
 }
 #logo {
   position: absolute;
-  width: 10rem;
-  height: 5rem;
+  width: 10vw;
+  height: 7vh;
   margin-left: 20vw;
-  top: 4rem;
+  top: 7vh;
 }
 a {
   color: white;
@@ -44,20 +44,49 @@ p {
   margin-left: 20vw;
   margin-top: 3vh;
 }
-#phone1 {
-  float: right;
-  width: 19rem;
-  height: 37rem;
+.phones {
   position: relative;
+}
+#phone1 {
+  width: 17vw;
+  height: 60vh;
+  position: absolute;
+  right: 40vw;
+  top: -20vh;
+  z-index: 2;
+}
+#phone2 {
+  right: 30vw;
+  width: 17vw;
+  height: 60vh;
+  position: absolute;
   top: -20vh;
   z-index: 1;
 }
-#phone2 {
-  margin-right: 25vw;
-  float: right;
-  width: 19rem;
-  height: 37rem;
+.buttons {
   position: relative;
-  top: -20vh;
-  z-index: 2;
+}
+#b1 {
+  position: absolute;
+  left: 20vw;
+  margin-top: 10vh;
+  transform: scale(2.5);
+  background-color: green;
+  border: none;
+  font-size: xx-small;
+  padding: 0.5vh 1vw;
+  color: white;
+  border-radius: 0.2rem;
+}
+#b2 {
+  position: absolute;
+  left: 33vw;
+  margin-top: 10vh;
+  transform: scale(2.5);
+  background-color: blue;
+  border: none;
+  font-size: xx-small;
+  padding: 0.5vh 1vw;
+  color: white;
+  border-radius: 0.2rem;
 }
