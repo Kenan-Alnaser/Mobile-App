@@ -29,6 +29,7 @@ ul {
 }
 a {
   color: white;
+  text-decoration: none;
 }
 h1 {
   color: white;
@@ -90,4 +91,7 @@ p {
   padding: 0.5vh 1vw;
   color: white;
   border-radius: 0.2rem;
+}
+#bodyDiv {
+  display: inline;
 }
