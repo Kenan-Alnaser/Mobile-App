@@ -57,5 +57,16 @@
       <button id="b2">Get the App</button>
       <button id="b1">Learn More</button>
     </div>
+    <script>
+      let clicked = false;
+      document.querySelector('.hamburger').addEventListener("click",()=>{
+      clicked= !clicked;
+          if(clicked){
+              document.querySelector('.side-menu').style.cssText = "display: block; position: absolute;top: 10vh;left:0;z-index: 1;"
+          } else{
+              document.querySelector('.side-menu').style.cssText = "display: none;"
+          }
+      })
+  </script>
   </body>
 </html>

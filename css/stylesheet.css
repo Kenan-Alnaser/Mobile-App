@@ -13,6 +13,7 @@ ul li {
 li {
   color: white;
   font-weight: bold;
+  padding-bottom: 1vh;
 }
 
 ul {
@@ -93,8 +94,10 @@ p {
   color: white;
   border-radius: 0.2rem;
 }
-#bodyDiv {
-  display: inline;
+#bodyDiv > h1,
+#bodyDiv > p {
+  position: relative;
+  padding-right: 40vw;
 }
 .hamburger {
   display: flex;
@@ -103,7 +106,6 @@ p {
   flex-direction: column;
   width: 3rem;
   height: 3rem;
-  display: none;
 }
 
 .hamburger div {
@@ -111,8 +113,7 @@ p {
   border: 2px black solid;
 }
 .side-menu {
-  background-color: orange;
   width: 15vw;
-  height: 30vh;
+  height: 2vh;
   display: none;
 }
