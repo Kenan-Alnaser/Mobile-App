@@ -98,7 +98,7 @@ p {
 #bodyDiv > h1,
 #bodyDiv > p {
   position: relative;
-  padding-right: 40vw;
+  padding-right: 30vw;
 }
 .hamburger {
   justify-content: space-evenly;
@@ -107,6 +107,7 @@ p {
   width: 3rem;
   height: 3rem;
   display: none;
+  border: 2px black solid;
 }
 
 .hamburger div {
@@ -118,7 +119,9 @@ p {
   height: 2vh;
   display: none;
 }
-
+#bodyDiv {
+  width: 80vw;
+}
 @media only screen and (max-width: 600px) {
   .hamburger {
     display: flex;
@@ -133,18 +136,22 @@ p {
   #phone1 {
     width: 25vw;
     height: 60vh;
-    position: absolute;
-    right: 10vw;
+    left: 10vw;
     top: -93vh;
   }
   #phone2 {
     width: 25vw;
     height: 60vh;
-    position: absolute;
-    right: 10vw;
+    left: 10vw;
     top: -33vh;
   }
-  #b1 {
-    left: 3.4rem;
+  #bodyDiv,
+  p,
+  h1 {
+    position: relative;
+    right: -5rem;
+  }
+  .buttons {
+    right: -10rem;
   }
 }
