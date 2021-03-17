@@ -122,6 +122,7 @@ p {
 #bodyDiv {
   width: 80vw;
 }
+/* Phone Screen mode */
 @media only screen and (max-width: 600px) {
   .hamburger {
     display: flex;
@@ -153,5 +154,55 @@ p {
   }
   .buttons {
     right: -10rem;
+  }
+}
+/* Low Res Tablet*/
+@media only screen and (max-width: 767px) {
+  .hamburger {
+    display: flex;
+    position: fixed;
+  }
+  .side-menu-PC {
+    display: none;
+  }
+  .phones {
+    display: flex;
+  }
+  #phone1 {
+    width: 25vw;
+    height: 60vh;
+    right: 10vw;
+    top: -93vh;
+  }
+  #phone2 {
+    width: 25vw;
+    height: 60vh;
+    right: 10vw;
+    top: -33vh;
+  }
+}
+/* Tablet Portrait Mode */
+@media only screen and (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+    position: fixed;
+  }
+  .side-menu-PC {
+    display: none;
+  }
+  .phones {
+    display: flex;
+  }
+  #phone1 {
+    width: 25vw;
+    height: 60vh;
+    right: 10vw;
+    top: -93vh;
+  }
+  #phone2 {
+    width: 25vw;
+    height: 60vh;
+    right: 10vw;
+    top: -33vh;
   }
 }
