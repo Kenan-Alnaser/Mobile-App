@@ -21,9 +21,9 @@
     </nav>
     <section>
       <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="line x-1"></div>
+        <div class="line x-2"></div>
+        <div class="line x-3"></div>
       </div>
       <div class="side-menu">
         <ul>
@@ -62,10 +62,16 @@
       document.querySelector('.hamburger').addEventListener("click",()=>{
       clicked= !clicked;
           if(clicked){
-              document.querySelector('.side-menu').style.cssText = "display: block; position: absolute;top: 15vh;left:0;z-index: 1;"
-          } else{
-              document.querySelector('.side-menu').style.cssText = "display: none;"
-          }
+          document.querySelector('.side-menu').style.cssText = "display: block; position: absolute;top: 15vh;left:0;z-index: 1;"
+          document.querySelector('.x-1').style.cssText = "  transform: rotate(-0.15turn); transition: 1s ease; position: absolute;"
+          document.querySelector('.x-2').style.cssText = "  position: absolute; animation-name: move-right; animation-iteration-count: 1; animation-duration: 1s; transform: scale(0);"
+          document.querySelector('.x-3').style.cssText = "  transform: rotate(0.15turn); transition: 1s ease; position: absolute;"
+      } else{
+          document.querySelector('.side-menu').style.cssText = "display: none;"
+          document.querySelector('.x-1').style.cssText = " "
+          document.querySelector('.x-2').style.cssText = "  position: absolute; transform: scale(1);"
+          document.querySelector('.x-3').style.cssText = " "
+      }
       })
   </script>
   </body>

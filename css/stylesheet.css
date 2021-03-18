@@ -116,7 +116,7 @@ p {
 }
 .side-menu {
   width: 15vw;
-  height: 2vh;
+  height: 1vh;
   display: none;
 }
 #bodyDiv {
@@ -204,5 +204,20 @@ p {
     height: 60vh;
     right: 10vw;
     top: -33vh;
+  }
+}
+.line {
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: white;
+  border-radius: 25%;
+}
+@keyframes move-right {
+  from {
+    left: 0;
+    transform: scale(1);
+  }
+  to {
+    left: 4vw;
   }
 }
