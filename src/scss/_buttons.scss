@@ -1,0 +1,32 @@
+.buttons {
+  position: relative;
+}
+#b1 {
+  position: absolute;
+  left: 23vw;
+  margin-top: 10vh;
+  transform: scale(2.5);
+  background-color: green;
+  border: none;
+  font-size: xx-small;
+  padding: 0.5vh 1vw;
+  color: white;
+  border-radius: 0.2rem;
+}
+#b2 {
+  position: absolute;
+  left: 35vw;
+  margin-top: 10vh;
+  transform: scale(2.5);
+  background-color: blue;
+  border: none;
+  font-size: xx-small;
+  padding: 0.5vh 1vw;
+  color: white;
+  border-radius: 0.2rem;
+}
+@media only screen and (max-width: 600px) {
+  .buttons {
+    right: -10rem;
+  }
+}
