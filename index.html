@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile App</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <nav class="side-menu-PC">
+      <img src="./img/logo_001.png" alt="Logo" id="logo" />
+      <ul>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Prices</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="hamburger">
+        <div class="line x-1"></div>
+        <div class="line x-2"></div>
+        <div class="line x-3"></div>
+      </div>
+      <div class="side-menu">
+        <ul>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Prices</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Sign Up</a></li>
+      </div>
+    </section>
+    <div id="bodyDiv">
+      <h1>
+        Make your Startup web <br />
+        with our template,
+      </h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum <br />
+        accusantium, quam tenetur ratione odit mollitia et! Reprehenderit <br />
+        facilis ut eum provident voluptatum. Quia cumque laudantium <br />
+        alias fugit molestias ut eum. <br />
+        Veniam suscipit tempore aspernatur inventore <br />
+        nihil accusamus impedit. Quis, assumenda?
+      </p>
+    </div>
+    <div class="phones">
+      <img src="./img/phone_001.png" alt="phone2" id="phone2" />
+      <img src="./img/phone_002.png" alt="phone1" id="phone1" />
+    </div>
+    <div class="buttons">
+      <button id="b2">Get the App</button>
+      <button id="b1">Learn More</button>
+    </div>
+    <script>
+      let clicked = false;
+      document.querySelector('.hamburger').addEventListener("click",()=>{
+      clicked= !clicked;
+          if(clicked){
+          document.querySelector('.side-menu').style.cssText = "display: block; position: absolute;top: 15vh;left:0;z-index: 1;"
+          document.querySelector('.x-1').style.cssText = "  transform: rotate(-0.15turn); transition: 1s ease; position: absolute;"
+          document.querySelector('.x-2').style.cssText = "  position: absolute; animation-name: move-right; animation-iteration-count: 1; animation-duration: 1s; transform: scale(0);"
+          document.querySelector('.x-3').style.cssText = "  transform: rotate(0.15turn); transition: 1s ease; position: absolute;"
+      } else{
+          document.querySelector('.side-menu').style.cssText = "display: none;"
+          document.querySelector('.x-1').style.cssText = " "
+          document.querySelector('.x-2').style.cssText = "  position: absolute; transform: scale(1);"
+          document.querySelector('.x-3').style.cssText = " "
+      }
+      })
+  </script>
+  </body>
+</html>
