@@ -1,0 +1,77 @@
+.phones {
+  position: relative;
+}
+#phone1 {
+  width: 17vw;
+  height: 60vh;
+  position: absolute;
+  right: 33vw;
+  top: -30vh;
+  z-index: 2;
+}
+#phone2 {
+  width: 17vw;
+  height: 60vh;
+  position: absolute;
+  right: 27vw;
+  top: -33vh;
+  z-index: 1;
+}
+#logo {
+  position: absolute;
+  width: 10vw;
+  height: 7vh;
+  margin-left: 20vw;
+  top: 7vh;
+}
+@media only screen and (max-width: 600px) {
+  .phones {
+    display: flex;
+  }
+  #phone1 {
+    width: 25vw;
+    height: 60vh;
+    left: 10vw;
+    top: -93vh;
+  }
+  #phone2 {
+    width: 25vw;
+    height: 60vh;
+    left: 10vw;
+    top: -33vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .phones {
+    display: flex;
+  }
+  #phone1 {
+    width: 25vw;
+    height: 60vh;
+    right: 10vw;
+    top: -93vh;
+  }
+  #phone2 {
+    width: 25vw;
+    height: 60vh;
+    right: 10vw;
+    top: -33vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .phones {
+    display: flex;
+  }
+  #phone1 {
+    width: 25vw;
+    height: 60vh;
+    right: 10vw;
+    top: -93vh;
+  }
+  #phone2 {
+    width: 25vw;
+    height: 60vh;
+    right: 10vw;
+    top: -33vh;
+  }
+}
